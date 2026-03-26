@@ -11,22 +11,24 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['logo192.png', 'logo512.png'],
       manifest: {
-        name: 'My App',
-        short_name: 'App',
+        name: 'Todo App',        // ← change this
+        short_name: 'Todo',      // ← change this
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',
-        theme_color: '#000000',
+        theme_color: '#6200ea',  // ← your purple color
         icons: [
           {
             src: 'logo192.png',
             sizes: '192x192',
-            type: 'image/png'
+            type: 'image/png',
+            purpose: 'any maskable'
           },
           {
             src: 'logo512.png',
             sizes: '512x512',
-            type: 'image/png'
+            type: 'image/png',
+            purpose: 'any maskable'
           }
         ]
       }
